@@ -110,7 +110,6 @@ def calcular_expressao(expr):
 
     numeros.append(float(numero_atual))
 
-    # resolve * e /
     i = 0
     while i < len(operadores):
         if operadores[i] == "*":
@@ -124,7 +123,6 @@ def calcular_expressao(expr):
         else:
             i += 1
 
-    # resolve + e -
     resultado = numeros[0]
     for i, op in enumerate(operadores):
         if op == "+":
